@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
-import visibility from '../assets/svg/visibilityIcon.svg';
-import { toast } from 'react-toastify';
 import OAuth from '../components/OAuth';
+import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
+import { toast } from 'react-toastify';
+import visibilityIcon from '../assets/svg/visibilityIcon.svg';
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -69,7 +69,7 @@ function SignIn() {
               onChange={onChange}
             />
             <img
-              src={visibility}
+              src={visibilityIcon}
               alt='show password'
               className='showPassword'
               onClick={() => setShowPassword((preState) => !preState)}
