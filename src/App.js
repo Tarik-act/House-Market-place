@@ -11,6 +11,8 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import CreateListing from './pages/CreateListing';
+import Listing from './pages/Listing';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -27,6 +29,11 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/create-listing' element={<CreateListing />} />
+          <Route
+            path='/category/:categoryName/:listingId'
+            element={<Listing />}
+          />
+          <Route path='/contact/:landlordId' element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>
@@ -37,3 +44,17 @@ function App() {
 }
 
 export default App;
+
+
+// "browserslist": {
+//   "production": [
+//     ">0.2%",
+//     "not dead",
+//     "not op_mini all"
+//   ],
+//   "development": [
+//     "last 1 chrome version",
+//     "last 1 firefox version",
+//     "last 1 safari version"
+//   ]
+// }
