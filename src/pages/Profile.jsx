@@ -16,7 +16,6 @@ import { toast } from 'react-toastify';
 import ListingItem from '../components/ListingItem';
 import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg';
 import homeIcon from '../assets/svg/homeIcon.svg';
-import { async } from '@firebase/util';
 
 function Profile() {
   const auth = getAuth();
@@ -103,6 +102,8 @@ function Profile() {
     }
   };
 
+  const onEdit = (listingId) => navigate(`/edit-listing/${listingId}`);
+
   return (
     <div className='profile'>
       <header className='profileHeader'>
@@ -163,6 +164,7 @@ function Profile() {
                   listing={listing.data}
                   id={listing.id}
                   onDelete={() => onDelete(listing.id)}
+                  onEdit={() => onEdit(listing.id)}
                 />
               ))}
             </ul>
