@@ -6,12 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-![House_app]("D:\Acts\React\house-marketplace\public\House_app.png")
+[House_app]("D:\Acts\React\house-marketplace\public\House_app.png")
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://house-market-place-nine.vercel.app/](https://house-market-place-nine.vercel.app/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
